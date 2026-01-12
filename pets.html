@@ -4,14 +4,64 @@
     <meta charset="UTF-8">
     <title>Available Pets - Happy Paws</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+
+        nav {
+            margin-bottom: 20px;
+        }
+
         nav a {
             text-decoration: none;
-            padding: 10px;
-            color: rgb(255, 0, 0);
+            padding: 8px 15px;
+            background-color: #eee;
+            color: #333;
+            border-radius: 5px;
+            margin-right: 5px;
             font-weight: bold;
         }
+
         nav a:hover {
-            color: rgb(139, 0, 0);
+            background-color: #ccc;
+        }
+
+        img {
+            margin: 10px;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin-top: 20px;
+            width: 80%;
+        }
+
+        th, td {
+            border: 1px solid #333;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        caption {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        figure {
+            display: inline-block;
+            margin: 10px;
+            text-align: center;
+        }
+
+        figcaption {
+            font-style: italic;
+            margin-top: 5px;
         }
     </style>
 </head>
@@ -19,8 +69,9 @@
 
     <!-- Navigation Menu -->
     <nav>
-        <a href="index.html">Home</a> |
+        <a href="index.html">Home</a>
         <a href="pets.html">Available Pets</a>
+        <a href="contact.html">Contact</a>
     </nav>
 
     <h1>Pets Available for Adoption</h1>
@@ -37,13 +88,26 @@
     </ol>
 
     <h2>Pet Gallery</h2>
-    <img src="images/cat1.jpg" alt="Adopt a Cat" width="300">
-    <img src="images/rabbit1.jpg" alt="Adopt a Rabbit" width="300">
-    <img src="images/rabbit.jpg" alt="Adopt another Rabbit" width="300">
-    <img src="images/dog1.jpg" alt="Adopt another Dog" width="300">
+    <figure>
+        <img src="images/cat1.jpg" alt="Cute Cat" width="300">
+        <figcaption>Fluffy the Cat</figcaption>
+    </figure>
+    <figure>
+        <img src="images/rabbit1.jpg" alt="Cute Rabbit" width="300">
+        <figcaption>Thumper the Rabbit</figcaption>
+    </figure>
+    <figure>
+        <img src="images/rabbit.jpg" alt="Another Rabbit" width="300">
+        <figcaption>Bunny</figcaption>
+    </figure>
+    <figure>
+        <img src="images/dog1.jpg" alt="Friendly Dog" width="300">
+        <figcaption>Buddy the Dog</figcaption>
+    </figure>
 
     <h2>Adoption Information Table</h2>
-    <table border="1">
+    <table>
+        <caption>Available Pets</caption>
         <tr>
             <th>Pet Name</th>
             <th>Type</th>
@@ -75,6 +139,10 @@
             <td>$120</td>
         </tr>
     </table>
+
+    <p>
+        <a href="index.html">⬅ Back to Home</a>
+    </p>
 
 </body>
 </html>

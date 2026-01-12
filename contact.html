@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us - Happy Paws</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+
+        nav {
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            padding: 8px 15px;
+            background-color: #eee;
+            color: #333;
+            border-radius: 5px;
+            margin-right: 5px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: #ccc;
+        }
+
+        input, textarea, button {
+            display: block;
+            margin: 10px 0 20px 0;
+            padding: 8px;
+            width: 300px;
+            font-size: 14px;
+        }
+
+        button {
+            width: 120px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="pets.html">Available Pets</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <h1>Contacting Us</h1>
+
+    <p>
+        If you need more information about the pets, adoption process, or have any questions,
+        please contact us using the information below or the form.
+    </p>
+
+    <h2>Phone:</h2>
+    <p>(800) GCLIFFS</p>
+
+    <h2>Email:</h2>
+    <p>info@greatcliffs.com</p>
+
+    <h2>Contact Form</h2>
+    <form action="#" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone">
+
+        <label for="cliff">Which Cliff are you inquiring about?</label>
+        <select id="cliff" name="cliff">
+            <option value="west">West Cliff</option>
+            <option value="north">North Cliff</option>
+            <option value="east">East Cliff</option>
+            <option value="south">South Cliff</option>
+        </select>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
