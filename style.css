@@ -111,4 +111,17 @@ input:focus, select:focus, textarea:focus {
     outline: none;
 }
 
+/* Buttons */
+button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    width: auto;
+    padding: 8px 15px;
+}
 
+button:hover {
+    background-color: #45a049;
+}
